@@ -121,7 +121,7 @@ WHERE EMPLOYEE.DepartmentID = DEPARTMENT.DepartmentID;
 
 OUTER JOIN이란 **조인 조건에서 동일한 값이 없는 행도 반환**할 때 사용한다.
 
-    - **LEFT OUTER JOIN**
+  - LEFT OUTER JOIN
 
     조인문의 왼쪽에 있는 테이블의 모든 결과를 가져온 후 오른쪽 테이블의 데이터를 매칭하고, 매칭되는 데이터가 없는 경우 NULL 표시
 
@@ -133,7 +133,7 @@ OUTER JOIN이란 **조인 조건에서 동일한 값이 없는 행도 반환**�
     <img width="193" alt="스크린샷_2021-08-26_오후_1 21 59" src="https://user-images.githubusercontent.com/38073401/130913724-8039f1c2-7b26-49f0-98b8-ca5a3f3a1bc8.png">
 
 
-- **RIGHT OUTER JOIN
+-  RIGHT OUTER JOIN
 
     조인문의 오른쪽에 있는 테이블의 모든 결과를 가져온 후 왼쪽의 테이블의 데이터를 매칭하고 매칭되는 데이터가 없는 경우 NULL 표시
     
@@ -146,7 +146,7 @@ OUTER JOIN이란 **조인 조건에서 동일한 값이 없는 행도 반환**�
     ON E.DepartmentID = D.DepartmentID;
     ```
 
-- **FULL OUTER JOIN
+-  FULL OUTER JOIN
 
     LEFT OUTER JOIN과 RIGHT OUTER JOIN을 합친 것으로, 양쪽 모두 조건이 일치하지 않는 것들까지 모두 결합하여 출력한다. 이것 역시 매칭되는 데이터가 없는 경우 NULL을 표시한다.
 
