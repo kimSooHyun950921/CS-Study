@@ -1,3 +1,4 @@
+[ 이력서&포트폴리오](https://drive.google.com/file/d/1xlU8eKT5xGJPb8Opg8dUOg_FgC_Yf7Bo/view?usp=sharing)
 1. 본직무에 지원한 이유는?
     ```
     학교에서 많은 프로젝트를 진행하면서 최적의 솔루션을 찾는방법이 매력적이였다. 
