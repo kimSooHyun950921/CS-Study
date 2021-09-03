@@ -48,6 +48,10 @@
 
 
 ---
+<<<<<<< HEAD
+=======
+# [스케줄링]
+>>>>>>> 8293850d3bd3ae594f01dec1a4b8bf6a7bf3c4d6
 
 ### 1) **스케줄링** **(Process scheduling) 이란?**
 
@@ -125,6 +129,7 @@
 
         -할당 시간이 크면 FCFS 와 같게 되고 작으면 문맥교환 (context switching)이 잦아져서 오버헤드가 증가한다.
 
+<<<<<<< HEAD
 
 
 # 3. 인터럽트, 시스템콜, PCB와 Context Switching
@@ -369,3 +374,5 @@ count를 하는곳에  lock을 걸어야합니다.
 ```
 
 
+=======
+>>>>>>> 8293850d3bd3ae594f01dec1a4b8bf6a7bf3c4d6
