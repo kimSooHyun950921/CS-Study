@@ -4,6 +4,8 @@
 
 현재 대학교 3학년입니다(2020년)
 
+[![https://solved.ac/profile/adxx](http://mazassumnida.wtf/api/v2/generate_badge?boj=adxx)](https://solved.ac/adxx)
+
 ## skills
 
 ### backend, server
