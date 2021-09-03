@@ -79,3 +79,25 @@ buffer 관리 정책에 따라 undo 복구와 redo 복구가 요구되거나, �
 buffer 교체는 transaction과는 무관하게 buffer의 상태에 따라 결정
 
 이로 인해 정상적으로 종료되지 않은 트랜잭션이 변경한 page들은 복구되어야 하는데 이를 undo라고 함
+
+2개의 정책, 수정된 page를 디스크에 쓰는 시점으로 분류
+
+1) steal
+
+수정된 page를 언제든 disk에 쓸 수 있는 정책
+
+대부분의 DBMS가 채택하는 buffer관리 정책
+
+undo logging과 복구를 필요로 함
+
+2) ~steal
+
+수정된 page들을 EOT(end of transaction)까지는 buffer에 유지하는 정책
+
+undo 작업 필요X but 큰 메모리 버퍼 필요
+
+
+# DB 트랜잭션 질문
+1. 트랜잭션에 대해 설명해 주세요
+2. 트랜잭션 격리 수준에 대해 설명해 주세요
+3. 트랜잭션 격리 수준은 몇가지가 있나요?(4개)
