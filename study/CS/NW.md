@@ -45,5 +45,22 @@
     - reno, cubic등이 혼잡제어 알고리즘에 속함
     ```
 # 2. Udp 대칭키 공개키
-# 3. Blocking non blocking
+
+# 3. Blocking non blocking 
+1. Blocking과 non blocking에 대해서 설명해주세요. 
+    ``` 
+    1. Blocking : 함수 B는 내 할 일을 다 마칠 때까지 제어권을 가지고 있는다. A는 B가 다 마칠 때까지 기다려야 한다.
+    2. Non-blocking : 함수 B는 할 일을 마치지 않았어도 A에게 제어권을 바로 넘겨준다. A는 B를 기다리면서도 다른 일을 진행할 수 있다.
+    ``` 
+2. Synchronous/Asynchronous에 대해서 설명해주세요. 
+    ```
+    Synchronous : 함수 A는 함수 B가 일을 하는 중에 기다리면서, 현재 상태가 어떤지 계속 체크한다.
+    Asynchronous : 함수 B의 수행 상태를 B 혼자 직접 신경쓰면서 처리한다. (Callback)
+
+    ```
+3. Blocking I/O 와 Non-Blocking I/O의 차이를 설면해주세요. 
+    ```
+    I/O 작업이 진행되는 동안 user Process(Thread) 는 자신의 작업을 중단한 채 대기.
+    Non-Blocking I/O 작업이 진행되는 동안 User Process의 작업을 중단하지 않음.
+
 # 4. Http 로드밸런싱
