@@ -361,6 +361,31 @@
 데드락은 서로다른 프로세스가 자원을 할당받지 못하는 상태일때 상기는 문제이다.
 ```
 
+### 6-1)TOCTOU 문제가 뭘까요?
+```
+Time of Check, Time of Use의 약자
+즉, 데이터의 확인시간과 데이터의 사용시간이 달라 생길 수 있는 Race Condition 문제
+```
+
+### 6-2) 
+이코드는 어떤 문제가 생길까요?
+```java
+File file new File(URL);
+if(file.exist()){
+    file.delete();
+}
+```
+
+### 6-3)어떻게 고쳐야할까요?
+```java
+if (file.exist()){
+    File.Delete(file);
+}
+private syncronized void File Delete(File file){
+    file.delete();
+}
+```
+
 
 ### 7) 경쟁상태가 발생할 수 있는것을 실제 예제(프로그램언어등)에서 설명해주세요
 ```
