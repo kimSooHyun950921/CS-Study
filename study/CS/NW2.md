@@ -154,3 +154,8 @@ HTTP가 TCP의 3-way handshake와 4-way handshake를 통해 세션을 열고,
     이중화된 로드 밸런서들은 서로 Health Check 과정을 거치며, 메인 로드 밸런서가 동작하지 않으면 가상IP는 여분의 로드 밸런서로 변경됩니다.
     ```
     
+# 5. Blocking vs Non-Blocking, Synchronous vs Asynchronous
+
+1. blocking, non-blocking에 대해 설명해주세요
+2. sync, Async에 대해 설명해 주세요
+3. 위의 두가지 경우가 혼합되면 어떻게 진행되는지 설명해주세요
