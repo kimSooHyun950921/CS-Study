@@ -157,5 +157,22 @@ HTTP가 TCP의 3-way handshake와 4-way handshake를 통해 세션을 열고,
 # 5. Blocking vs Non-Blocking, Synchronous vs Asynchronous
 
 1. blocking, non-blocking에 대해 설명해주세요
-2. sync, Async에 대해 설명해 주세요
-3. 위의 두가지 경우가 혼합되면 어떻게 진행되는지 설명해주세요
+```
+제어의 관점에서 두가지를 구분합니다
+호출된 함수에서 제어권이 바로 넘어가면 non-block, 그렇지 않고 함수가 끝나고 제어가 넘어가면 block입니다
+```
+
+3. sync, Async에 대해 설명해 주세요
+```
+동시성의 관점에서 둘을 구분합니다
+호출 함수가 호출 된 함수의 상태를 계속 체크하면 sync
+호출한 함수의 상태를 callback으로 처리하면 Async
+```
+
+5. 위의 두가지 경우가 혼합되면 어떻게 진행되는지 설명해주세요
+```
+block + sync : 호출 반환, 대기 중 다른일 X
+block + Async : 호출 콜백, 대기 중 다른일 X
+non + sync : call 이후 상태 체크 반환, 다른일 가능
+non + Async : call 이후 callback, 다른일 
+```
